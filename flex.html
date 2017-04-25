@@ -25,6 +25,26 @@
 			display: flex;
 			flex-direction: column-reverse;
 		}
+
+		.flex-wrap-nowrap {
+			display: flex;
+			flex: row;
+			flex-wrap: nowrap;
+		}
+		.flex-wrap-wrap {
+			display: flex;
+			flex: row;
+			flex-wrap: wrap;
+		}
+		.flex-wrap-wrap-reverse {
+			display: flex;
+			flex: row;
+			flex-wrap: wrap-reverse;
+		}
+		.span500 >span{
+			width:700px;
+			height: 100px;
+		}
 	</style>
 </head>
 <body>
@@ -53,5 +73,25 @@
 			<span>2</span>
 			<span>3</span>
 		</div>
-	</body>
-	</html>
+		<hr>
+		<h2>flex-wrap</h3>
+			<h3>1.1 flex-wrap:nowrap</h3>
+			<div class="flex-wrap-nowrap span500">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+			</div>
+			<h3>1.2 flex-wrap:wrap</h3>
+			<div class="flex-wrap-wrap span500">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+			</div>
+			<h3>1.3 flex-wrap:wrap-reverse</h3>
+			<div class="flex-wrap-wrap-reverse span500">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+			</div>
+		</body>
+		</html>
